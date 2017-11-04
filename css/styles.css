@@ -1,3 +1,29 @@
+body {
+  font-family: arial, sans-serif;
+}
+header {
+  width: 100%;
+  background-color: #5c5353;
+  padding: 15px;
+  margin: -8px;
+  border-bottom-width: 20px;
+  border-bottom-style: groove;
+  border-bottom-color: #ddecf5;
+}
 h1 {
-  color: red;
+  color: #ddecf5;
+}
+.svg-diagram {
+  width: 1300px;
+}
+.k8s-worker-group > svg{
+  width: 400px;
+  height: 800px;
+}
+.k8s-master > svg{
+  width: 400px;
+  height: 400px;
+}
+form {
+  margin: 50px auto;
 }
