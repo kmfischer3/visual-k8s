@@ -15,6 +15,7 @@ h1 {
 }
 .svg-diagram {
   width: 1300px;
+  margin: auto;
 }
 .k8s-worker-group > svg{
   width: 400px;
@@ -26,6 +27,7 @@ h1 {
 }
 form {
   margin: 50px auto;
+  width: 1300px;
 }
 #red-master {
   fill: #f5acac;
