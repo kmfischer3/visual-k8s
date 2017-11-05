@@ -10,8 +10,10 @@ header {
   border-bottom-style: groove;
   border-bottom-color: #ddecf5;
 }
-h1 {
+header > h1{
   color: #ddecf5;
+  margin: auto;
+  width: 1300px;
 }
 .svg-diagram {
   width: 1300px;
