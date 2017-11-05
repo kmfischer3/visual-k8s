@@ -21,9 +21,34 @@ h1 {
   height: 800px;
 }
 .k8s-master > svg{
-  width: 400px;
-  height: 400px;
+  width: 1500px;
+  height: 300px;
 }
 form {
   margin: 50px auto;
+}
+#red-master {
+  fill: #f5acac;
+  stroke: #5c5353;
+}
+#green-worker {
+  fill: #87b487;
+  stroke: #5c5353;
+}
+#purple-worker {
+  fill: #b6a4b6;
+  stroke: #5c5353;
+}
+#orange-worker {
+  fill: #FF9674;
+  stroke: #5c5353;
+}
+
+@-webkit-keyframes flash-dead {
+  0%, 49% {
+    fill: #909AA0;
+  }
+  50%, 100% {
+    fill: #FF4C4A;
+  }
 }
