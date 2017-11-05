@@ -25,24 +25,34 @@ h1 {
   width: 1500px;
   height: 300px;
 }
+.node-name {
+  fill: #5C5353;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: monospace;
+}
 form {
   margin: 50px auto;
   width: 1300px;
 }
 #red-master {
   fill: #f5acac;
+  /*stroke-width:3;*/
   stroke: #5c5353;
 }
 #green-worker {
   fill: #87b487;
+  /*stroke-width:3;*/
   stroke: #5c5353;
 }
 #purple-worker {
   fill: #b6a4b6;
+  /*stroke-width:3;*/
   stroke: #5c5353;
 }
 #orange-worker {
   fill: #FF9674;
+  /*stroke-width:3;*/
   stroke: #5c5353;
 }
 
