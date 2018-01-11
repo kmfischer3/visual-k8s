@@ -17,7 +17,14 @@ function listPods() {
     var namespace = data.items[i].metadata.namespace;
     var status = data.items[i].status.phase;
     var curr_pod = pod.construct(name, namespace, status);
-    console.log(curr_pod);
+
+    console.log(curr_pod.NAME);
+    console.log(curr_pod.NAMESPACE);
+    console.log(curr_pod.STATUS);
+
+    document.getElementById("green-worker-pod-space").innerHTML += curr_pod.generateSVG();
+
+    //node.addPod(curr_pod);
   }
 }
 

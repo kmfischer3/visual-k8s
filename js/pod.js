@@ -29,6 +29,11 @@ var pod = {
 
   setStatus: function(status) {
     pod.STATUS = status;
+  },
+
+  generateSVG: function() {
+    if (pod.validate())
+      return '<rect x="0" y="0" width="200" height="50"/><text x="5" y="25" fill="white">'+pod.NAME+'</text>';
   }
 
 };

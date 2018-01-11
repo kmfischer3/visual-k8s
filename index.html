@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/styles.css">
-  <script src="data/api.v1.namespaces.kube-system.pods.js"></script>
+  <script src="data/api.v1.namespaces.default.pods.js"></script>
   <script src="js/pod.js"></script>
   <script src="js/util.js"></script>
 </head>
 <body>
 
   <header>
-    <h1>Kubernoot Status</h1>
+    <h1>K<small> U B E R N O O T &#10084;</small></h1>
   </header>
 
   <form>
@@ -22,7 +22,7 @@
     </select>
   </form>
 
-  <button type="button" onclick="printMsg(); return false;" style="width:100%;background:teal;padding:20px;">Click Me!</button>
+  <button type="button" onclick="listPods(); return false;" style="width:100%;background:teal;padding:20px;">Click Me!</button>
 
   <div class="k8s-node" id="red-master">
     <div class="node-name">red-master</div>
