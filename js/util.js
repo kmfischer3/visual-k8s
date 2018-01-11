@@ -31,3 +31,20 @@ function test() {
   }
 
 }
+
+function trimString(name, length) {
+  return name.substring(0, length);
+}
+
+function addPod(pod_name, podspace_id) {
+  if ( !pod_name || !podspace_id ) {
+    console.log("pod_name and/or podspace_id are empty");
+    return;
+  }
+
+  var trimmed_pod_name = trimString(pod_name, 25);
+
+  var pod_html = '<rect x="0" y="0" width="200" height="50"/><text x="5" y="25">'+trimmed_pod_name+'</text>';
+  document.getElementById(podspace_id).innerHTML += pod_html;
+
+}

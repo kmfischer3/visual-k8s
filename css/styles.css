@@ -55,6 +55,10 @@ form {
 rect {
   fill: #5C5353;
 }
+text {
+  font-family: monospace;
+  fill: white
+}
 
 .pod-name {
   color: white;
