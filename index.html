@@ -22,32 +22,47 @@
     </select>
   </form>
 
-  <div class="svg-diagram">
 
-    <div class="k8s-master">
-      <svg>
-        <rect id="red-master" width="1156" height="250"/>
-        <text class="node-name" x="5" y="20">red-master</text>
-        <rect class="pod" x="5" y="40" width="50" height="70"/>
-      </svg>
-    </div>
+  <div class="k8s-node" id="red-master">
+    <div class="node-name">red-master</div>
 
-    <div class="k8s-worker-group">
-      <svg>
-        <rect id="green-worker" width="350" height="700"/>
-        <text class="node-name" x="5" y="20">green-worker</text>
-      </svg>
-      <svg>
-        <rect id="purple-worker" width="350" height="700"/>
-        <text class="node-name" x="5" y="20">purple-worker</text>
-      </svg>
-      <svg>
-        <rect id="orange-worker" width="350" height="700"/>
-        <text class="node-name" x="5" y="20">orange-worker</text>
+    <div class="pod-space">
+      <svg width="1200" height="140">
+        <rect x="0" y="0" width="100" height="50"/>
+        <text x="5" y="25" fill="white">pod-xyz</text>
+        <rect x="120" y="0" width="100" height="50"/>
+        <text x="125" y="25" fill="white">pod-123</text>
+        <rect x="0" y="70" width="100" height="50"/>
+        <text x="5" y="95" fill="white">pod-abc</text>
       </svg>
     </div>
 
   </div>
+
+  <div class="k8s-node" id="orange-worker">
+    <div class="node-name">orange-worker</div>
+
+    <div class="pod-space">
+    </div>
+
+  </div>
+
+  <div class="k8s-node" id="green-worker">
+    <div class="node-name">green-worker</div>
+
+    <div class="pod-space">
+    </div>
+
+  </div>
+
+  <div class="k8s-node" id="purple-worker">
+    <div class="node-name">purple-worker</div>
+
+    <div class="pod-space">
+    </div>
+
+  </div>
+
 
 </body>
 </html>
