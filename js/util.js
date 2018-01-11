@@ -48,3 +48,7 @@ function addPod(pod_name, podspace_id) {
   document.getElementById(podspace_id).innerHTML += pod_html;
 
 }
+
+function printMsg() {
+  alert("david has a small wiener");
+}
