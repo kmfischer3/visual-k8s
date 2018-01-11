@@ -10,3 +10,24 @@ function killNode(node_id) {
   document.getElementById(node_id).style.animation = "flash-dead 1s infinite";
   return;
 }
+
+function listPods() {
+  for (var i = 0; i < Object.keys(data.items).length; i ++) {
+    var name = data.items[i].metadata.name;
+    var namespace = data.items[i].metadata.namespace;
+    var status = data.items[i].status.phase;
+    var curr_pod = pod.construct(name, namespace, status);
+    console.log(curr_pod);
+  }
+}
+
+function test() {
+
+  var svg_div = document.getElementById("red-master-pod-space");
+
+  for (var i = 0; i < 11; i++) {
+    var pod_html = '<rect class="pod" width="50" height="70"/>';
+    document.getElementById("red-master-pod-space").innerHTML += pod_html;
+  }
+
+}
